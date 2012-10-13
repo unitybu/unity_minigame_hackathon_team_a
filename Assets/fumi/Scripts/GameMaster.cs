@@ -20,6 +20,7 @@ public class GameMaster : MonoBehaviour
 		{
 			//次のシーンでも消えないようにする.
 			DontDestroyOnLoad(this.gameObject);
+			instance = true;
 			Init();
 		}
 		else
